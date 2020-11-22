@@ -69,6 +69,10 @@ body {
   color: #585553;
   min-height: 100%;
 }
+.titledpm {
+  text-decoration: none;
+  font-weight: bold;
+}
 
 header {
   background-color: #fff;
@@ -228,7 +232,7 @@ nav a {
 
   #topNav {
     position: absolute;
-    top: 6.3rem;
+    top: 6rem;
     left: 20%;
     width: 60%;
     display: block;
@@ -292,7 +296,7 @@ nav a {
   .social {
     display: block;
     float: right;
-    margin: 2.7rem 0 0 0;
+    margin: 2.2rem 0 0 0;
     position: relative;
     z-index: 101;
   }
@@ -490,7 +494,6 @@ footer a.email {
 }
 .subFooter p {
   color: #aaa;
-  text-transform: uppercase;
   letter-spacing: 0.15em;
   text-align: center;
 }
