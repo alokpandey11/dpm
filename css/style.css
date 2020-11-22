@@ -217,6 +217,8 @@ nav a {
   }
 
   .logo {
+    position: relative;
+    bottom: 5px;
     height: 4rem;
     width: auto;
   }
