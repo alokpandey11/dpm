@@ -455,6 +455,7 @@ footer a.telephone {
 
 .contactContact a.email,
 footer a.email {
+  text-transform: lowercase;
   background-image: url(../images/emailW.png);
 }
 
@@ -1251,7 +1252,13 @@ p.btn a:hover:before {
 }
 
 .contentStrip.fullWidth.image .textOverlay * {
-  color: #fff !important;
+  color: #505960 !important;
+  background-color: #fde9d3;
+  display: block;
+  width: 350px;
+  letter-spacing: 2px;
+  font-size: 22px;
+  opacity: 0.7;
 }
 
 .contentStrip.fullWidth .textOverlay p {
