@@ -496,6 +496,7 @@ footer a.email {
   background-color: #737171;
 }
 .subFooter p {
+  margin-top: 0px;
   color: #aaa;
   letter-spacing: 0.15em;
   text-align: center;
