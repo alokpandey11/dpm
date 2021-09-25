@@ -100,6 +100,119 @@
         </ul>
       </div>
     </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <iframe src="https://swar.helper4u.in/bot/1" id="swarChatbot" allowtransparency="true"
+    style="
+      position: fixed;
+      bottom: 60px;
+      z-index: 1000;
+      right: 0rem;
+      padding-bottom: 0;
+  visibility:hidden;
+    "
+    frameborder="0"
+  ></iframe>
+  
+  <div
+    id="swar-btn"
+    class="chat-bot-icon bg-primary rounded"
+    style="
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      padding: 0.6rem;
+      z-index: 1000;
+      background-color: #ff3008 !important;
+    "
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      style="cursor: pointer"
+      class="text-light animate"
+    >
+      <path
+        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+      ></path>
+    </svg>  </div>
+    <style>
+      #swarChatbot {
+        width: 450px;
+        height: 90vh;
+      }
+      @media only screen and (max-device-width: 900px) {
+        #swarChatbot {
+          width: 100%;
+        }
+      }
+    </style>
+  
+    <script>
+      $("#swar-btn").click(function () {
+        if ($("#swarChatbot").css("visibility") != "hidden") {
+          $("#swarChatbot").css("visibility", "hidden");
+          $("#swar-btn").empty();
+          $("#swar-btn").append(` 
+          <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="cursor: pointer"
+        class="text-light animate"
+      >
+        <path
+          d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+        ></path>
+      </svg>
+          
+         `);
+        } else {
+          $("#swarChatbot").css("visibility", "visible");
+          $("#swar-btn").empty();
+          $("#swar-btn").append(`  <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="cursor:pointer;"
+        class="text-light animate "
+      >
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>`);
+        }
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="mainBody" class="home">
       <div class="innerWidth contentStripContainer">
